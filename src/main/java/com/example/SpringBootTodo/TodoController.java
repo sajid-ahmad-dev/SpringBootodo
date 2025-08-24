@@ -74,7 +74,7 @@ public class TodoController {
         return new ResponseEntity<>("Not Found",HttpStatus.NOT_FOUND);
     }
 
-    @GetMapping("/todos/filterx")
+    @GetMapping("/todos/filter")
     public ResponseEntity<List<Todo>> getTodos(@RequestParam(required = false) Boolean completed) {
         List<Todo> result = todoList;   // start with all todos
 
